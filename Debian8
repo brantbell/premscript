@@ -551,93 +551,93 @@ cat > /root/limit.sh <<END3
 END3
 
 cd
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/trial"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-add"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-aktif"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-ban"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-delete"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-detail"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-expire"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-limit"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-lock"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-login"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-unban"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-unlock"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-password"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-log"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-add-pptp"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/alluser-pptp"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-login-pptp"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-expire-pptp"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-detail-pptp"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/bench-network"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/speedtest"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/ram"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-limit"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-ban"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-generate"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-list"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/diagnosa"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/premium-script"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-delete-expired"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/auto-reboot"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-install"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/menu"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-auto-limit"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-auto-limit-script"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-squid"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-openvpn"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-openssh"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-dropbear"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/autokill"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/limit.sh"
-wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/ban.sh"
+wget -O /usr/bin/trial "https://raw.githubusercontent.com/brantbell/premscript/master/menu/trial"
+wget -O /usr/bin/user-add "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-add"
+wget -O /usr/bin/user-aktif "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-aktif"
+wget -O /usr/bin/user-ban "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-ban"
+wget -O /usr/bin/user-delete "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-delete"
+wget -O /usr/bin/user-detail/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-detail"
+wget -O /usr/bin/user-expire "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-expire"
+wget -O /usr/bin/user-limit "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-limit"
+wget -O /usr/bin/user-lock "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-lock"
+wget -O /usr/bin/user-login "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-login"
+wget -O /usr/bin/user-unban "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-unban"
+wget -O /usr/bin/user-unlock "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-unlock"
+wget -O /usr/bin/user-password "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-password"
+wget -O /usr/bin/user-log "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-log"
+wget -O /usr/bin/user-add-pptp "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-add-pptp"
+wget -O /usr/bin/alluser-pptp "https://raw.githubusercontent.com/brantbell/premscript/master/menu/alluser-pptp"
+wget -O /usr/bin/user-login-pptp "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-login-pptp"
+wget -O /usr/bin/user-expire-pptp "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-expire-pptp"
+wget -O /usr/bin/user-detail-pptp "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-detail-pptp"
+wget -O /usr/bin/bench-network "https://raw.githubusercontent.com/brantbell/premscript/master/menu/bench-network"
+wget -O /usr/bin/speedtest "https://raw.githubusercontent.com/brantbell/premscript/master/menu/speedtest"
+wget -O /usr/bin/ram "https://raw.githubusercontent.com/brantbell/premscript/master/menu/ram"
+wget -O /usr/bin/log-limit "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-limit"
+wget -O /usr/bin/log-ban "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-ban"
+wget -O /usr/bin/user-generate "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-generate"
+wget -O /usr/bin/user-list "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-list"
+wget -O /usr/bin/diagnosa "https://raw.githubusercontent.com/brantbell/premscript/master/menu/diagnosa"
+wget -O /usr/bin/premium-script/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/premium-script"
+wget -O /usr/bin/user-delete-expired "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-delete-expired"
+wget -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/brantbell/premscript/master/menu/auto-reboot"
+wget -O /usr/bin/log-install "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-install"
+wget -O /usr/bin/menu "https://raw.githubusercontent.com/brantbell/premscript/master/menu/menu"
+wget -O /usr/bin/user-auto-limit "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-auto-limit"
+wget -O /usr/bin/user-auto-limit-script "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-auto-limit-script"
+wget -O /usr/bin/edit-port "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port"
+wget -O /usr/bin/edit-port-squid "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-squid"
+wget -O /usr/bin/edit-port-openvpn "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-openvpn"
+wget -O /usr/bin/edit-port-openssh "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-openssh"
+wget -O /usr/bin/edit-port-dropbear "https://raw.githubusercontent.com/brantbell/premscript/master/menu/edit-port-dropbear"
+wget -O /usr/bin/autokill "https://raw.githubusercontent.com/brantbell/premscript/master/menu/autokill"
+wget -O /usr/bin/limit.sh "https://raw.githubusercontent.com/brantbell/premscript/master/menu/limit.sh"
+wget -O /usr/bin/ban.sh "https://raw.githubusercontent.com/brantbell/premscript/master/menu/ban.sh"
 
 cp /usr/local/bin/premium-script /usr/local/bin/menu
 
 cd
-chmod +x /usr/local/bin/trial
-chmod +x /usr/local/bin/user-add
-chmod +x /usr/local/bin/user-aktif
-chmod +x /usr/local/bin/user-ban
-chmod +x /usr/local/bin/user-delete
-chmod +x /usr/local/bin/user-detail
-chmod +x /usr/local/bin/user-expire
-chmod +x /usr/local/bin/user-limit
-chmod +x /usr/local/bin/user-lock
-chmod +x /usr/local/bin/user-login
-chmod +x /usr/local/bin/user-unban
-chmod +x /usr/local/bin/user-unlock
-chmod +x /usr/local/bin/user-password
-chmod +x /usr/local/bin/user-log
-chmod +x /usr/local/bin/user-add-pptp
-chmod +x /usr/local/bin/user-delete-pptp
-chmod +x /usr/local/bin/alluser-pptp
-chmod +x /usr/local/bin/user-login-pptp
-chmod +x /usr/local/bin/user-expire-pptp
-chmod +x /usr/local/bin/user-detail-pptp
-chmod +x /usr/local/bin/bench-network
-chmod +x /usr/local/bin/speedtest
-chmod +x /usr/local/bin/ram
-chmod +x /usr/local/bin/log-limit
-chmod +x /usr/local/bin/log-ban
-chmod +x /usr/local/bin/user-generate
-chmod +x /usr/local/bin/user-list
-chmod +x /usr/local/bin/diagnosa
-chmod +x /usr/local/bin/premium-script
-chmod +x /usr/local/bin/user-delete-expired
-chmod +x /usr/local/bin/auto-reboot
-chmod +x /usr/local/bin/log-install
-chmod +x /usr/local/bin/menu
-chmod +x /usr/local/bin/user-auto-limit
-chmod +x /usr/local/bin/user-auto-limit-script
-chmod +x /usr/local/bin/edit-port
-chmod +x /usr/local/bin/edit-port-squid
-chmod +x /usr/local/bin/edit-port-openvpn
-chmod +x /usr/local/bin/edit-port-openssh
-chmod +x /usr/local/bin/edit-port-dropbear
-chmod +x /usr/local/bin/autokill
+chmod +x /usr/bin/trial
+chmod +x /usr/local/user-add
+chmod +x /usr/local/user-aktif
+chmod +x /usr/local/user-ban
+chmod +x /usr/local/user-delete
+chmod +x /usr/local/user-detail
+chmod +x /usr/local/user-expire
+chmod +x /usr/local/user-limit
+chmod +x /usr/local/user-lock
+chmod +x /usr/local/user-login
+chmod +x /usr/local/user-unban
+chmod +x /usr/local/user-unlock
+chmod +x /usr/local/user-password
+chmod +x /usr/local/user-log
+chmod +x /usr/local/user-add-pptp
+chmod +x /usr/local/user-delete-pptp
+chmod +x /usr/local/alluser-pptp
+chmod +x /usr/local/user-login-pptp
+chmod +x /usr/local/user-expire-pptp
+chmod +x /usr/local/user-detail-pptp
+chmod +x /usr/local/bench-network
+chmod +x /usr/local/speedtest
+chmod +x /usr/local/ram
+chmod +x /usr/local/log-limit
+chmod +x /usr/local/log-ban
+chmod +x /usr/local/user-generate
+chmod +x /usr/local/user-list
+chmod +x /usr/local/diagnosa
+chmod +x /usr/local/premium-script
+chmod +x /usr/local/user-delete-expired
+chmod +x /usr/local/auto-reboot
+chmod +x /usr/local/log-install
+chmod +x /usr/local/menu
+chmod +x /usr/local/user-auto-limit
+chmod +x /usr/local/user-auto-limit-script
+chmod +x /usr/local/edit-port
+chmod +x /usr/local/edit-port-squid
+chmod +x /usr/local/edit-port-openvpn
+chmod +x /usr/local/edit-port-openssh
+chmod +x /usr/local/edit-port-dropbear
+chmod +x /usr/local/autokill
 chmod +x /root/limit.sh
 chmod +x /root/ban.sh
 screen -AmdS limit /root/limit.sh
