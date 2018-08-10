@@ -533,6 +533,24 @@ iptables-restore < /etc/iptables.up.rules
 
 # download script
 cd
+sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
+sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.local
+sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.d/rc.local
+sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.d/rc.local
+echo "0 0 * * * root /usr/local/bin/user-expire" > /etc/cron.d/user-expire
+echo "0 0 * * * root /usr/local/bin/user-expire-pptp" > /etc/cron.d/user-expire-pptp
+
+cat > /root/ban.sh <<END3
+#!/bin/bash
+#/usr/local/bin/user-ban
+END3
+
+cat > /root/limit.sh <<END3
+#!/bin/bash
+#/usr/local/bin/user-limit
+END3
+
+cd
 wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/trial"
 wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-add"
 wget -O /usr/bin/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-aktif"
