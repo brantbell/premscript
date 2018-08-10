@@ -596,46 +596,46 @@ wget -O /usr/bin/ban.sh "https://raw.githubusercontent.com/brantbell/premscript/
 
 cd
 chmod +x /usr/bin/trial
-chmod +x /usr/local/user-add
-chmod +x /usr/local/user-aktif
-chmod +x /usr/local/user-ban
-chmod +x /usr/local/user-delete
-chmod +x /usr/local/user-detail
-chmod +x /usr/local/user-expire
-chmod +x /usr/local/user-limit
-chmod +x /usr/local/user-lock
-chmod +x /usr/local/user-login
-chmod +x /usr/local/user-unban
-chmod +x /usr/local/user-unlock
-chmod +x /usr/local/user-password
-chmod +x /usr/local/user-log
-chmod +x /usr/local/user-add-pptp
-chmod +x /usr/local/user-delete-pptp
-chmod +x /usr/local/alluser-pptp
-chmod +x /usr/local/user-login-pptp
-chmod +x /usr/local/user-expire-pptp
-chmod +x /usr/local/user-detail-pptp
-chmod +x /usr/local/bench-network
-chmod +x /usr/local/speedtest
-chmod +x /usr/local/ram
-chmod +x /usr/local/log-limit
-chmod +x /usr/local/log-ban
-chmod +x /usr/local/user-generate
-chmod +x /usr/local/user-list
-chmod +x /usr/local/diagnosa
-#chmod +x /usr/local/premium-script
-chmod +x /usr/local/user-delete-expired
-chmod +x /usr/local/auto-reboot
-chmod +x /usr/local/log-install
-chmod +x /usr/local/menu
-chmod +x /usr/local/user-auto-limit
-chmod +x /usr/local/user-auto-limit-script
-chmod +x /usr/local/edit-port
-chmod +x /usr/local/edit-port-squid
-chmod +x /usr/local/edit-port-openvpn
-chmod +x /usr/local/edit-port-openssh
-chmod +x /usr/local/edit-port-dropbear
-chmod +x /usr/local/autokill
+chmod +x /usr/bin/user-add
+chmod +x /usr/bin/user-aktif
+chmod +x /usr/bin/user-ban
+chmod +x /usr/bin/user-delete
+chmod +x /usr/bin/user-detail
+chmod +x /usr/bin/user-expire
+chmod +x /usr/bin/user-limit
+chmod +x /usr/bin/user-lock
+chmod +x /usr/bin/user-login
+chmod +x /usr/bin/user-unban
+chmod +x /usr/bin/user-unlock
+chmod +x /usr/bin/user-password
+chmod +x /usr/bin/user-log
+chmod +x /usr/bin/user-add-pptp
+chmod +x /usr/bin/user-delete-pptp
+chmod +x /usr/bin/alluser-pptp
+chmod +x /usr/bin/user-login-pptp
+chmod +x /usr/bin/user-expire-pptp
+chmod +x /usr/bin/user-detail-pptp
+chmod +x /usr/bin/bench-network
+chmod +x /usr/bin/speedtest
+chmod +x /usr/bin/ram
+chmod +x /usr/bin/log-limit
+chmod +x /usr/bin/log-ban
+chmod +x /usr/bin/user-generate
+chmod +x /usr/bin/user-list
+chmod +x /usr/bin/diagnosa
+#chmod +x /usr/bin/premium-script
+chmod +x /usr/bin/user-delete-expired
+chmod +x /usr/bin/auto-reboot
+chmod +x /usr/bin/log-install
+chmod +x /usr/bin/menu
+chmod +x /usr/bin/user-auto-limit
+chmod +x /usr/bin/user-auto-limit-script
+chmod +x /usr/bin/edit-port
+chmod +x /usr/bin/edit-port-squid
+chmod +x /usr/bin/edit-port-openvpn
+chmod +x /usr/bin/edit-port-openssh
+chmod +x /usr/bin/edit-port-dropbear
+chmod +x /usr/bin/autokill
 chmod +x /root/limit.sh
 chmod +x /root/ban.sh
 screen -AmdS limit /root/limit.sh
@@ -743,4 +743,4 @@ echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-instal
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "----------- Script Created By Steven Indarto(fb.com/stevenindarto2) ------------"
-echo "------------------------------ Modified by 0123456 -----------------------------"
+echo "------------------------------ Modified by DENBAGUSS -----------------------------"
