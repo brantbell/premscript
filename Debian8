@@ -578,7 +578,7 @@ wget -O /usr/bin/log-ban "https://raw.githubusercontent.com/brantbell/premscript
 wget -O /usr/bin/user-generate "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-generate"
 wget -O /usr/bin/user-list "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-list"
 wget -O /usr/bin/diagnosa "https://raw.githubusercontent.com/brantbell/premscript/master/menu/diagnosa"
-wget -O /usr/bin/premium-script/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/premium-script"
+#wget -O /usr/bin/premium-script/ "https://raw.githubusercontent.com/brantbell/premscript/master/menu/premium-script"
 wget -O /usr/bin/user-delete-expired "https://raw.githubusercontent.com/brantbell/premscript/master/menu/user-delete-expired"
 wget -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/brantbell/premscript/master/menu/auto-reboot"
 wget -O /usr/bin/log-install "https://raw.githubusercontent.com/brantbell/premscript/master/menu/log-install"
@@ -625,7 +625,7 @@ chmod +x /usr/local/log-ban
 chmod +x /usr/local/user-generate
 chmod +x /usr/local/user-list
 chmod +x /usr/local/diagnosa
-chmod +x /usr/local/premium-script
+#chmod +x /usr/local/premium-script
 chmod +x /usr/local/user-delete-expired
 chmod +x /usr/local/auto-reboot
 chmod +x /usr/local/log-install
