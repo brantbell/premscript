@@ -594,8 +594,6 @@ wget -O /usr/bin/autokill "https://raw.githubusercontent.com/brantbell/premscrip
 wget -O /usr/bin/limit.sh "https://raw.githubusercontent.com/brantbell/premscript/master/menu/limit.sh"
 wget -O /usr/bin/ban.sh "https://raw.githubusercontent.com/brantbell/premscript/master/menu/ban.sh"
 
-cp /usr/local/bin/premium-script /usr/local/bin/menu
-
 cd
 chmod +x /usr/bin/trial
 chmod +x /usr/local/user-add
