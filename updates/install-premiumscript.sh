@@ -77,5 +77,5 @@ cd
 echo " "
 echo " "
 echo "Premium Script Successfully Updates!"
-echo "Modified by 0123456"
+echo "Modified by DENBAGUSS"
 echo " "
