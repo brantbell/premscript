@@ -206,7 +206,7 @@ echo "Modified by 0123456"
 echo " "
 exit
 elif test $x -eq 45; then
-wget https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/install-premiumscript.sh -O - -o /dev/null|sh
+wget https://raw.githubusercontent.com/daybreakersx/premscript/master/menu/install-premiumscript.sh -O - -o /dev/null|sh
 else
 echo "Options Not Available In Menu."
 echo " "
