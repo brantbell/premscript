@@ -283,7 +283,7 @@ chkconfig sshd on
 
 # install dropbear
 yum -y install dropbear
-echo "OPTIONS=\"-p 109 -p 110 -p 442\"" > /etc/sysconfig/dropbear
+echo "OPTIONS=\"-p 109 -p 110 -p 443\"" > /etc/sysconfig/dropbear
 echo "/bin/false" >> /etc/shells
 service dropbear restart
 chkconfig dropbear on
@@ -354,12 +354,12 @@ service squid restart
 chkconfig squid on
 
 # install stunnel
-yum install stunnel
-wget -O /etc/pki/tls/certs/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
-wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.conf"
-mkdir /var/run/stunnel
-chown nobody:nobody /var/run/stunnel
-stunnel /etc/stunnel/stunnel.conf
+#yum install stunnel
+#wget -O /etc/pki/tls/certs/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
+#wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.conf"
+#mkdir /var/run/stunnel
+#chown nobody:nobody /var/run/stunnel
+#stunnel /etc/stunnel/stunnel.conf
 
 # install ddos deflate
 cd
@@ -372,10 +372,10 @@ rm -rf /root/master.zip
 
 # install webmin
 cd
-wget "http://prdownloads.sourceforge.net/webadmin/webmin-1.881-1.noarch.rpm"
+wget "http://prdownloads.sourceforge.net/webadmin/webmin-1.890-1.noarch.rpm"
 yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty perl-Encode-Detect
-rpm -i webmin-1.881-1.noarch.rpm;
-rm webmin-1.881-1.noarch.rpm
+rpm -i webmin-1.890-1.noarch.rpm;
+rm webmin-1.890-1.noarch.rpm
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 service webmin restart
 chkconfig webmin on
@@ -424,7 +424,7 @@ service crond start
 chkconfig crond on
 
 # set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Malaysia /etc/localtime
 
 # finalizing
 chown -R nginx:nginx /home/vps/public_html
