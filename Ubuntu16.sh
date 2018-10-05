@@ -241,9 +241,6 @@ cd /etc/openvpn/
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 # OpenVPN Configuration by HostingTermurah.net
-# (Official Partner VPS-Murah.net)
-# Modified by 0123456
-
 client
 proto tcp
 remote $MYIP 1194
@@ -267,8 +264,8 @@ http-proxy $MYIP 3128
 http-proxy-retry
 dhcp-option DNS 8.8.8.8
 dhcp-option DNS 8.8.4.4
-http-proxy-option CUSTOM-HEADER Host ipv4.google.com
-http-proxy-option CUSTOM-HEADER X-Online-Host ipv4.google.com
+http-proxy-option CUSTOM-HEADER Host m.netflix.com
+http-proxy-option CUSTOM-HEADER X-Online-Host m.netflix.com
 
 END
 echo '<ca>' >> /home/vps/public_html/client.ovpn
@@ -350,7 +347,7 @@ service ssh restart
 # install dropbear
 sudo apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=442/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 110"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 service ssh restart
@@ -425,12 +422,12 @@ sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 # install stunnel4
-sudo apt-get -y install stunnel4
-wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
-wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/c7/stunnel.conf"
-sed -i $MYIP2 /etc/stunnel/stunnel.conf
-sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-service stunnel4 restart
+#sudo apt-get -y install stunnel4
+#wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
+#wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/c7/stunnel.conf"
+#sed -i $MYIP2 /etc/stunnel/stunnel.conf
+#sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
+#service stunnel4 restart
 
 # install webmin
 cd
