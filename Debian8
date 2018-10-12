@@ -180,7 +180,7 @@ service ssh restart
 # install dropbear
 apt-get install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=442/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 110"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 /etc/init.d/dropbear restart
@@ -240,12 +240,12 @@ sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 # install stunnel4
-apt-get -y install stunnel4
-wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
-wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/req/stunnel.conf"
-sed -i $MYIP2 /etc/stunnel/stunnel.conf
-sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-service stunnel4 restart
+#apt-get -y install stunnel4
+#wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/stunnel.pem"
+#wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/daybreakersx/premscript/master/req/stunnel.conf"
+#sed -i $MYIP2 /etc/stunnel/stunnel.conf
+#sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
+#service stunnel4 restart
 
 # install webmin
 cd
@@ -372,9 +372,6 @@ END
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 # OpenVPN Configuration by HostingTermurah.net
-# (Official Partner VPS-Murah.net)
-# Modified by 0123456
-
 client
 dev tun
 proto tcp
