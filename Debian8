@@ -542,7 +542,7 @@ echo "00 01 * * * root echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon
 echo "*/3 * * * * root /usr/bin/clearcache.sh" > /etc/cron.d/clearcache1
 
 # swap ram
-dd if=/dev/zero of=/swapfile bs=1024 count=2048k
+dd if=/dev/zero of=/swapfile bs=1024 count=4096k
 # buat swap
 mkswap /swapfile
 # jalan swapfile
