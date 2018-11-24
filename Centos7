@@ -153,7 +153,7 @@ chkconfig sshd on
 
 # install dropbear
 yum -y install dropbear
-echo "OPTIONS=\"-p 109 -p 110 -p 442\"" > /etc/sysconfig/dropbear
+echo "OPTIONS=\"-p 444 -p 110 -p 443\"" > /etc/sysconfig/dropbear
 echo "/bin/false" >> /etc/shells
 service dropbear restart
 chkconfig dropbear on
@@ -222,7 +222,7 @@ http_access deny manager
 http_access allow localnet
 http_access allow localhost
 http_access deny all
-http_port 8888
+http_port 8799
 http_port 8080
 http_port 8000
 http_port 3128
